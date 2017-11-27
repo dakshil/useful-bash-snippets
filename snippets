@@ -9,4 +9,4 @@ real=($(echo ${array[1]} | awk -F'[ms]' '{print 60*$1+$2}'))
 echo "$real
 
 #fix line endings
-sed -i 's/\r//' setup.sh
+sed -i 's/\r//' file.sh
