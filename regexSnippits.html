@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">Generate</button>
+
+<p id="regexCode"></p>
+
+<script>
+function myFunction() {
+    // split username and domain over @
+    var str = "ddd-asd@a.com"; 
+    var pattern1 = /[\w.-]+@[\w.-]+/g;
+    var result1 = str.match(pattern1);
+    document.getElementById("regexCode").innerHTML = result1;
+    //split url
+    var str2 = "https://www.example.com/Home/blah?bjankjbsd"; 
+    var pattern2 = /[\w.-]+/g;
+    var result2 = str.match(pattern2);
+    document.getElementById("regexCode").innerHTML = result2;
+}
+</script>
+
+</body>
+</html>
