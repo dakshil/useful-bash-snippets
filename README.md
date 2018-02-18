@@ -1,4 +1,4 @@
-# useful-bash-snippets
+# useful-snippets
 #Contains useful bash snippets
 #Contains useful regex snippits
 
