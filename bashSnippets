@@ -11,5 +11,7 @@ echo "$real
 #fix line endings
 sed -i 's/\r//' file.sh
 
+#list directory entries and count them
+ls /mountpoint | wc -l
 
 
