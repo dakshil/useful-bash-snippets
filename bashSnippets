@@ -14,4 +14,10 @@ sed -i 's/\r//' file.sh
 #list directory entries and count them
 ls /mountpoint | wc -l
 
+#find process and port binding
+sudo lsof -i:<port>
+
+#kill process
+kill -9 <pid>
+
 
