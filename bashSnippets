@@ -20,4 +20,5 @@ sudo lsof -i:<port>
 #kill process
 kill -9 <pid>
 
-
+#GUI login to vm without rdp
+VBoxSDL --startvm <VMNAME> --separate
