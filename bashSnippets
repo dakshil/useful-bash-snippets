@@ -22,3 +22,12 @@ kill -9 <pid>
 
 #GUI login to vm without rdp
 VBoxSDL --startvm <VMNAME> --separate
+
+#run process after logging out
+screen -R -L
+#to log output once in the screen, press ctrl + a and then shift + :
+logfile myfile.log
+#to detach screen, press ctrl + a + d
+#to reattach to screen, llist first
+screen -rl
+screen -r screenId
