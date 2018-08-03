@@ -31,3 +31,8 @@ logfile myfile.log
 #to reattach to screen, llist first
 screen -rl
 screen -r screenId
+
+#Bash replace all occurences of string1 with string2 in files ending with .extension
+( shopt -s globstar dotglob
+    sed -i -- 's/string1/string2/g' **.baz
+)
