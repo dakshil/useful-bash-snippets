@@ -36,3 +36,6 @@ screen -r screenId
 ( shopt -s globstar dotglob
     sed -i -- 's/string1/string2/g' **.baz
 )
+
+#Hex to Binary
+echo 280b2603 | xxd -r -p | xxd -b
