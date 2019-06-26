@@ -39,3 +39,9 @@ screen -r screenId
 
 #Hex to Binary
 echo 280b2603 | xxd -r -p | xxd -b
+
+#extract last numeric value from a line in a file where KEYWORD is the delimiter
+cat someFile | grep 'someKeyword' | awk -FKEYWORD '{print $NF}' | sed 's/[^0-9]*//g'
+
+#extract first numeric value in line
+cat someFile | grep 'someKeyword' | sed 's/[^0-9.\t ]*//g' | awk '{ print $1 }'"
